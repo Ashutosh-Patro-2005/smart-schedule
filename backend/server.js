@@ -42,3 +42,4 @@ app.post('/api/generate', async (req, res) => {
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Backend server running on port ${PORT}`));
+module.exports = app;
