@@ -83,7 +83,7 @@ function App() {
     if (!input || !scheduleDate) return alert("Please provide both parameters and select a date from the calendar.");
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/generate', { 
+      const res = await axios.post('https://smart-schedule-drab.vercel.app/api/generate',{ 
         userInput: `For the date ${scheduleDate}: ${input}` 
       });
       setTasks(res.data);
