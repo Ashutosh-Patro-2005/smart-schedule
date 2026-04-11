@@ -21,7 +21,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 // 4. The Route (Must exactly match the frontend: /api/generate)
-app.post('/generate', async (req, res) => {
+app.post('/api/generate', async (req, res) => {
     try {
         const { userInput } = req.body;
 
